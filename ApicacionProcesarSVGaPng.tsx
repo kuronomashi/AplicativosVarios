@@ -66,7 +66,7 @@ const BubbleLoadingFrameExtractor = () => {
           
           ctx.beginPath();
           ctx.arc(x, y, radius * (size / 24), 0, Math.PI * 2);
-          ctx.fillStyle = '#000000';
+          ctx.fillStyle = '#FFFFFF';
           ctx.fill();
         }
       });
@@ -159,7 +159,7 @@ const BubbleLoadingFrameExtractor = () => {
                 key={index}
                 className="bg-white rounded-xl shadow-lg p-4 hover:shadow-2xl transition-shadow"
               >
-                <div className="bg-gray-100 rounded-lg p-6 mb-4 flex items-center justify-center aspect-square">
+                <div className="bg-gradient-to-br from-gray-700 to-gray-900 rounded-lg p-6 mb-4 flex items-center justify-center aspect-square border-2 border-gray-600">
                   <img
                     src={frame.url}
                     alt={`Frame ${index + 1}`}
